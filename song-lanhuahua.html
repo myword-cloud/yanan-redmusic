@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>兰花花 - 延安十三年红色音乐高校美育平台</title>
+<style>
+:root{--red-main:#B22222;--red-deep:#8B1A1A;--gold:#E6B422;--gold-light:#F5D76E;--cream:#FBF0E0;--text:#3A1A1A;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Microsoft YaHei","PingFang SC","Noto Serif SC",serif;background:var(--cream);color:var(--text);line-height:1.9;}
+header{background:var(--red-main);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;}
+.header-left{display:flex;align-items:center;gap:14px;}
+.logo-mark{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold-light));border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--red-deep);font-weight:900;font-size:22px;}
+.header-title{font-size:18px;font-weight:900;letter-spacing:2px;color:#fff;}
+.header-nav a{color:#FFE8C8;text-decoration:none;margin-left:22px;font-size:14px;letter-spacing:2px;}
+.header-nav a:hover{color:var(--gold-light);}
+.page-banner{background:linear-gradient(135deg,var(--red-main),var(--red-deep));color:#fff;text-align:center;padding:70px 40px 60px;}
+.page-banner h1{font-size:42px;letter-spacing:8px;font-weight:900;margin-bottom:16px;color:var(--gold-light);}
+.page-banner .gold-line{width:140px;height:3px;background:var(--gold);margin:0 auto;}
+.content{max-width:900px;margin:0 auto;padding:60px 40px;}
+.sub-title-box{display:block;width:fit-content;background:var(--red-deep);color:var(--gold-light);padding:8px 26px;font-size:16px;letter-spacing:4px;font-weight:700;border-radius:2px;border-left:4px solid var(--gold);box-shadow:0 3px 10px rgba(139,26,26,.35);margin-bottom:20px;margin-top:36px;}
+.sub-title-box:first-child{margin-top:0;}
+.detail-block{background:#fff;border-left:6px solid var(--red-main);padding:30px 34px;margin-bottom:28px;box-shadow:0 6px 20px rgba(139,26,26,.1);border-radius:0 4px 4px 0;}
+.detail-block h3{color:var(--red-deep);font-size:22px;letter-spacing:4px;margin-bottom:12px;font-weight:800;}
+.detail-block p{font-size:15px;color:#5A3A3A;letter-spacing:1px;text-indent:2em;margin-bottom:10px;}
+.detail-block p:last-child{margin-bottom:0;}
+.detail-block img{width:100%;border-radius:6px;margin-top:12px;display:block;}
+.audio-btn-wrap{margin-top:24px;text-align:center;}
+.audio-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--red-deep);padding:14px 44px;border-radius:4px;text-decoration:none;font-weight:900;letter-spacing:4px;font-size:15px;transition:.3s;box-shadow:0 6px 18px rgba(230,180,34,.35);}
+.audio-btn:hover{background:linear-gradient(135deg,var(--red-main),var(--red-deep));color:var(--gold-light);transform:scale(1.05);}
+.back-btn{display:inline-block;margin-top:20px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--red-deep);padding:12px 40px;letter-spacing:4px;font-weight:700;text-decoration:none;border-radius:2px;}
+.back-btn:hover{background:var(--red-deep);color:var(--gold-light);}
+footer{background:#2A0A0A;color:#C9A9A9;text-align:center;padding:20px;font-size:13px;letter-spacing:2px;margin-top:40px;}
+footer span{color:var(--gold);}
+@media(max-width:768px){.page-banner h1{font-size:26px;letter-spacing:4px;}.header-title{font-size:14px;}.header-nav a{margin-left:12px;font-size:12px;}}
+ /* ===== 延小音悬浮 AI ===== */
+.ai-avatar-btn{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:9999;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+.ai-avatar-btn img{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #E6B422;
+  box-shadow:0 6px 24px rgba(139,26,26,.4);
+  transition:.3s;
+}
+.ai-avatar-btn:hover img{
+  transform:scale(1.08);
+  box-shadow:0 10px 32px rgba(230,180,34,.8);
+}
+.ai-avatar-tip{
+  background:linear-gradient(135deg,#B22222,#8B1A1A);
+  color:#F5D76E;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+  padding:4px 14px;
+  border-radius:20px;
+  border:1.5px solid #E6B422;
+  white-space:nowrap;
+} 
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="logo-mark">延</div>
+    <div class="header-title">延安十三年红色音乐高校美育平台</div>
+  </div>
+  <nav class="header-nav"><a href="index.html">首页</a ></nav>
+</header>
+
+<section class="page-banner">
+  <h1>兰花花</h1>
+  <div class="gold-line"></div>
+</section>
+
+<section class="content">
+
+  <div class="sub-title-box">创作背景</div>
+  <div class="detail-block">
+    <p>《兰花花》是陕北经典信天游叙事民歌，属于民间集体口头创作。歌曲原型为陕北女子姬延玲，1919年出生于延安南川临镇街农民家庭。她心灵手巧、容貌俊秀，因喜爱穿蓝色底布上映有小百花的衣衫，被大家称为“兰花花”。</p >
+    <p>姬延玲与一名擅长文艺宣传的战士互生情愫，但在封建礼教与包办婚姻制度压迫下，被迫嫁入地主富户人家，婚姻不幸，最终不堪忍受命运的捉弄服毒自杀。其恋人归来后，运用信天游调式编创歌词，后经延安鲁艺音乐工作者收集整理并艺术加工，成为陕北民歌代表作。</p >
+  </div>
+
+  <div class="sub-title-box">音乐艺术特征</div>
+  <div class="detail-block">
+    <p>体裁为陕北信天游（山歌），通行记谱多采用五声羽调式，为上下两个乐句组成的单乐段四句体，节拍为2/4拍。每一段的结束句都呈下行进行，多数段落结束音落在主音羽上。情感层次丰富：前半段赞美兰花花的美丽纯真，旋律柔和深情；后半段情绪转为悲愤苍凉，控诉封建礼教对人的压迫，叙事感染力极强。</p >
+  </div>
+
+  <div class="sub-title-box">教学目标</div>
+  <div class="detail-block">
+    <p><strong>知识目标：</strong>认识信天游体裁，掌握上下句结构特点，了解陕北民歌与人民生活紧密相连的特点。</p >
+    <p><strong>技能目标：</strong>学习长线条气息控制，高音松弛演唱，避免挤嗓喊叫；用音色变化完成故事叙事。</p >
+    <p><strong>情感目标：</strong>体会旧社会底层人民的苦难，感受民歌承载的人文情感，尊重民间音乐文化。</p >
+  </div>
+
+  <div class="sub-title-box">演唱处理</div>
+  <div class="detail-block">
+    <p>气息深长稳定，声音通透开阔。叙述人物外貌时音色温柔、抒情；讲述悲惨遭遇时，音色下沉、情绪凝重，突出故事的悲剧感。把握信天游自由舒展的韵律，不要生硬卡死节拍。</p >
+  </div>
+
+  <div class="sub-title-box">教学拓展</div>
+  <div class="detail-block">
+    <p>欣赏不同歌唱家演绎版本，对比处理差异；了解陕北黄土高原自然环境如何塑造信天游高亢悠长的音乐风格。</p >
+  </div>
+
+  <div class="sub-title-box">教学图片</div>
+  <div class="detail-block">
+    <img src="lanhuahua1.png" alt="陕北黄土高原">
+    <img src="lanhuahua2.png" alt="陕北民居">
+    <img src="lanhuahua3.png" alt="兰花花简谱">
+    <img src="lanhuahua4.png" alt="兰花花曲谱（续）">
+  </div>
+
+  <div class="audio-btn-wrap">
+    <a href="lanhuahua.mp4" target="_blank" class="audio-btn">▶ 播放音频</a >
+  </div>
+
+  <a class="back-btn" href="index.html">返回首页</a >
+</section>
+
+<footer>
+  <p>陕西师范大学音乐学院 | 延安十三年红色音乐赋能高校思政美育调研项目</p >
+  <p>延安十三年红色音乐高校美育平台 · <span>红色音乐赋能高校思政美育</span></p >
+</footer>
+<!-- ===== 延小音悬浮 AI ===== -->
+<a href="https://yuanqi.tencent.com/webim/#/chat/mrkcel?appid=2098349671251635264&experience=true" target="_blank" class="ai-avatar-btn">
+  <img src="ai.jpg" alt="延小音">
+  <div class="ai-avatar-tip">延小音 · 点我对话</div>
+</a >
+</body>
+</html>
