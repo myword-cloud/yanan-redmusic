@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南泥湾 - 延安十三年红色音乐高校美育平台</title>
+<style>
+:root{--red-main:#B22222;--red-deep:#8B1A1A;--gold:#E6B422;--gold-light:#F5D76E;--cream:#FBF0E0;--text:#3A1A1A;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Microsoft YaHei","PingFang SC","Noto Serif SC",serif;background:var(--cream);color:var(--text);line-height:1.9;}
+header{background:var(--red-main);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;}
+.header-left{display:flex;align-items:center;gap:14px;}
+.logo-mark{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold-light));border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--red-deep);font-weight:900;font-size:22px;}
+.header-title{font-size:18px;font-weight:900;letter-spacing:2px;color:#fff;}
+.header-nav a{color:#FFE8C8;text-decoration:none;margin-left:22px;font-size:14px;letter-spacing:2px;}
+.header-nav a:hover{color:var(--gold-light);}
+.page-banner{background:linear-gradient(135deg,var(--red-main),var(--red-deep));color:#fff;text-align:center;padding:70px 40px 60px;}
+.page-banner h1{font-size:42px;letter-spacing:8px;font-weight:900;margin-bottom:16px;color:var(--gold-light);}
+.page-banner .gold-line{width:140px;height:3px;background:var(--gold);margin:0 auto;}
+.content{max-width:900px;margin:0 auto;padding:60px 40px;}
+.sub-title-box{display:block;width:fit-content;background:var(--red-deep);color:var(--gold-light);padding:8px 26px;font-size:16px;letter-spacing:4px;font-weight:700;border-radius:2px;border-left:4px solid var(--gold);box-shadow:0 3px 10px rgba(139,26,26,.35);margin-bottom:20px;margin-top:36px;}
+.sub-title-box:first-child{margin-top:0;}
+.detail-block{background:#fff;border-left:6px solid var(--red-main);padding:30px 34px;margin-bottom:28px;box-shadow:0 6px 20px rgba(139,26,26,.1);border-radius:0 4px 4px 0;}
+.detail-block h3{color:var(--red-deep);font-size:22px;letter-spacing:4px;margin-bottom:12px;font-weight:800;}
+.detail-block p{font-size:15px;color:#5A3A3A;letter-spacing:1px;text-indent:2em;margin-bottom:10px;}
+.detail-block p:last-child{margin-bottom:0;}
+.detail-block img{width:100%;border-radius:6px;margin-top:12px;display:block;}
+.audio-btn-wrap{margin-top:24px;text-align:center;}
+.audio-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--red-deep);padding:14px 44px;border-radius:4px;text-decoration:none;font-weight:900;letter-spacing:4px;font-size:15px;transition:.3s;box-shadow:0 6px 18px rgba(230,180,34,.35);}
+.audio-btn:hover{background:linear-gradient(135deg,var(--red-main),var(--red-deep));color:var(--gold-light);transform:scale(1.05);}
+.back-btn{display:inline-block;margin-top:20px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--red-deep);padding:12px 40px;letter-spacing:4px;font-weight:700;text-decoration:none;border-radius:2px;}
+.back-btn:hover{background:var(--red-deep);color:var(--gold-light);}
+footer{background:#2A0A0A;color:#C9A9A9;text-align:center;padding:20px;font-size:13px;letter-spacing:2px;margin-top:40px;}
+footer span{color:var(--gold);}
+@media(max-width:768px){.page-banner h1{font-size:26px;letter-spacing:4px;}.header-title{font-size:14px;}.header-nav a{margin-left:12px;font-size:12px;}}
+ /* ===== 延小音悬浮 AI ===== */
+.ai-avatar-btn{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:9999;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+.ai-avatar-btn img{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #E6B422;
+  box-shadow:0 6px 24px rgba(139,26,26,.4);
+  transition:.3s;
+}
+.ai-avatar-btn:hover img{
+  transform:scale(1.08);
+  box-shadow:0 10px 32px rgba(230,180,34,.8);
+}
+.ai-avatar-tip{
+  background:linear-gradient(135deg,#B22222,#8B1A1A);
+  color:#F5D76E;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+  padding:4px 14px;
+  border-radius:20px;
+  border:1.5px solid #E6B422;
+  white-space:nowrap;
+} 
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="logo-mark">延</div>
+    <div class="header-title">延安十三年红色音乐高校美育平台</div>
+  </div>
+  <nav class="header-nav"><a href="index.html">首页</a ></nav>
+</header>
+
+<section class="page-banner">
+  <h1>南泥湾</h1>
+  <div class="gold-line"></div>
+</section>
+
+<section class="content">
+
+  <div class="sub-title-box">创作背景</div>
+  <div class="detail-block">
+    <p>《南泥湾》创作于1943年，贺敬之作词，马可作曲，是延安鲁迅艺术学院秧歌舞《挑篮》的插曲。1943年新春佳节，鲁艺秧歌队需要编排一组节目慰问陕甘宁边区“生产模范”第三五九旅全体官兵。19岁的贺敬之被三五九旅官兵开展大生产运动的热情所感动，接到任务的当天便写出了歌词，随后由作曲家马可采用陕北民歌调式谱曲。</p >
+    <p>抗日战争进入相持阶段后，国民党对陕甘宁边区实施军事包围与经济封锁，边区物资供给极度困难。三五九旅进驻南泥湾，开荒垦地、修建窑洞、兴修水利，将昔日荒凉的“烂泥湾”改造为良田连片、物产丰饶的“陕北好江南”。</p >
+  </div>
+
+  <div class="sub-title-box">音乐艺术特征</div>
+  <div class="detail-block">
+    <p>节拍为2/4拍，五声徵调式，属陕北秧歌舞曲体裁，整体调性明亮稳定。乐曲采用对比单二部曲式（A+B）：A段旋律平缓流畅，叙事性强；B段旋律音区抬高，节奏顿挫感增强，情绪热情昂扬。尾声采用五度上行的甩腔手法结束全曲，结构完整，歌舞律动性极强。</p >
+  </div>
+
+  <div class="sub-title-box">教学目标</div>
+  <div class="detail-block">
+    <p><strong>知识目标：</strong>了解南泥湾大生产运动历史，掌握秧歌舞曲体裁特点，识别五声徵调式的听觉色彩。</p >
+    <p><strong>技能目标：</strong>能够连贯演唱歌曲，把握陕北民歌装饰音与滑音韵味，做到声断气不断。</p >
+    <p><strong>情感目标：</strong>感悟自力更生、艰苦奋斗的延安精神，理解劳动创造美好生活的内涵。</p >
+  </div>
+
+  <div class="sub-title-box">演唱处理</div>
+  <div class="detail-block">
+    <p>气息轻柔连贯，音色甜美干净。A段抒情柔和，侧重营造田园意境；B段逐步提升音量，情绪上扬，表达赞美与自豪。演唱装饰音自然适度，不夸张，贴合秧歌舞质朴欢快的气质。</p >
+  </div>
+
+  <div class="sub-title-box">教学拓展</div>
+  <div class="detail-block">
+    <p>结合历史图片、开荒影像资料，对比南泥湾过去与现在的面貌；简单介绍秧歌舞这种延安时期群众文艺形式，理解文艺为人民服务的思想。</p >
+  </div>
+
+  <div class="sub-title-box">教学图片</div>
+  <div class="detail-block">
+    <img src="nanniwan1.png" alt="南泥湾开荒">
+    <img src="nanniwan2.png" alt="南泥湾大生产">
+    <img src="nanniwan3.png" alt="南泥湾简谱">
+    <img src="nanniwan4.png" alt="南泥湾五线谱">
+    <img src="nanniwan5.png" alt="南泥湾五线谱（续）">
+  </div>
+
+  <div class="audio-btn-wrap">
+    <a href="nanniwan.mp4" target="_blank" class="audio-btn">▶ 播放音频</a >
+  </div>
+
+  <a class="back-btn" href="index.html">返回首页</a >
+</section>
+
+<footer>
+  <p>陕西师范大学音乐学院 | 延安十三年红色音乐赋能高校思政美育调研项目</p >
+  <p>延安十三年红色音乐高校美育平台 · <span>红色音乐赋能高校思政美育</span></p >
+</footer>
+<!-- ===== 延小音悬浮 AI ===== -->
+<a href="https://yuanqi.tencent.com/webim/#/chat/mrkcel?appid=2098349671251635264&experience=true" target="_blank" class="ai-avatar-btn">
+  <img src="ai.jpg" alt="延小音">
+  <div class="ai-avatar-tip">延小音 · 点我对话</div>
+</a >
+</body>
+</html>
