@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>二月里来 - 延安十三年红色音乐高校美育平台</title>
+<style>
+:root{--red-main:#B22222;--red-deep:#8B1A1A;--gold:#E6B422;--gold-light:#F5D76E;--cream:#FBF0E0;--text:#3A1A1A;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Microsoft YaHei","PingFang SC","Noto Serif SC",serif;background:var(--cream);color:var(--text);line-height:1.9;}
+header{background:var(--red-main);padding:20px 40px;display:flex;align-items:center;justify-content:space-between;}
+.header-left{display:flex;align-items:center;gap:14px;}
+.logo-mark{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold-light));border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--red-deep);font-weight:900;font-size:22px;}
+.header-title{font-size:18px;font-weight:900;letter-spacing:2px;color:#fff;}
+.header-nav a{color:#FFE8C8;text-decoration:none;margin-left:22px;font-size:14px;letter-spacing:2px;}
+.header-nav a:hover{color:var(--gold-light);}
+.page-banner{background:linear-gradient(135deg,var(--red-main),var(--red-deep));color:#fff;text-align:center;padding:70px 40px 60px;}
+.page-banner h1{font-size:42px;letter-spacing:8px;font-weight:900;margin-bottom:16px;color:var(--gold-light);}
+.page-banner .gold-line{width:140px;height:3px;background:var(--gold);margin:0 auto;}
+.content{max-width:900px;margin:0 auto;padding:60px 40px;}
+.sub-title-box{display:block;width:fit-content;background:var(--red-deep);color:var(--gold-light);padding:8px 26px;font-size:16px;letter-spacing:4px;font-weight:700;border-radius:2px;border-left:4px solid var(--gold);box-shadow:0 3px 10px rgba(139,26,26,.35);margin-bottom:20px;margin-top:36px;}
+.sub-title-box:first-child{margin-top:0;}
+.detail-block{background:#fff;border-left:6px solid var(--red-main);padding:30px 34px;margin-bottom:28px;box-shadow:0 6px 20px rgba(139,26,26,.1);border-radius:0 4px 4px 0;}
+.detail-block h3{color:var(--red-deep);font-size:22px;letter-spacing:4px;margin-bottom:12px;font-weight:800;}
+.detail-block p{font-size:15px;color:#5A3A3A;letter-spacing:1px;text-indent:2em;margin-bottom:10px;}
+.detail-block p:last-child{margin-bottom:0;}
+.detail-block img{width:100%;border-radius:6px;margin-top:12px;display:block;}
+.audio-btn-wrap{margin-top:24px;text-align:center;}
+.audio-btn{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--red-deep);padding:14px 44px;border-radius:4px;text-decoration:none;font-weight:900;letter-spacing:4px;font-size:15px;transition:.3s;box-shadow:0 6px 18px rgba(230,180,34,.35);}
+.audio-btn:hover{background:linear-gradient(135deg,var(--red-main),var(--red-deep));color:var(--gold-light);transform:scale(1.05);}
+.back-btn{display:inline-block;margin-top:20px;background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--red-deep);padding:12px 40px;letter-spacing:4px;font-weight:700;text-decoration:none;border-radius:2px;}
+.back-btn:hover{background:var(--red-deep);color:var(--gold-light);}
+footer{background:#2A0A0A;color:#C9A9A9;text-align:center;padding:20px;font-size:13px;letter-spacing:2px;margin-top:40px;}
+footer span{color:var(--gold);}
+@media(max-width:768px){.page-banner h1{font-size:26px;letter-spacing:4px;}.header-title{font-size:14px;}.header-nav a{margin-left:12px;font-size:12px;}}
+  /* ===== 延小音悬浮 AI ===== */
+.ai-avatar-btn{
+  position:fixed;
+  right:24px;
+  bottom:24px;
+  z-index:9999;
+  text-decoration:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+.ai-avatar-btn img{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #E6B422;
+  box-shadow:0 6px 24px rgba(139,26,26,.4);
+  transition:.3s;
+}
+.ai-avatar-btn:hover img{
+  transform:scale(1.08);
+  box-shadow:0 10px 32px rgba(230,180,34,.8);
+}
+.ai-avatar-tip{
+  background:linear-gradient(135deg,#B22222,#8B1A1A);
+  color:#F5D76E;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:2px;
+  padding:4px 14px;
+  border-radius:20px;
+  border:1.5px solid #E6B422;
+  white-space:nowrap;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <div class="logo-mark">延</div>
+    <div class="header-title">延安十三年红色音乐高校美育平台</div>
+  </div>
+  <nav class="header-nav"><a href="index.html">首页</a ></nav>
+</header>
+
+<section class="page-banner">
+  <h1>二月里来</h1>
+  <div class="gold-line"></div>
+</section>
+
+<section class="content">
+
+  <div class="sub-title-box">创作背景</div>
+  <div class="detail-block">
+    <p>《二月里来》创作于1939年3月，塞克作词，冼星海作曲，选自大型声乐套曲《生产大合唱》第二场《播种与抗战》。</p >
+    <p>1938年，诗人、剧作家塞克和冼星海先后来到延安，他们同在鲁迅艺术学院任教。当时正值抗战相持阶段，中共中央在延安召开生产动员大会，发出了“自己动手，自力更生，艰苦奋斗，克服困难”的号召。塞克写下一组以生产与抗战为主题的诗，旋即被冼星海谱成《生产大合唱》。</p >
+  </div>
+
+  <div class="sub-title-box">音乐艺术特征</div>
+  <div class="detail-block">
+    <p>4/4拍，田园抒情风格，四句式方正乐段，起承转合结构工整。旋律线条平缓流畅，起伏柔和，节奏均匀舒缓。前两句起承呼应，句末均落在徵音上；第三句落在角音上，连续的两个切分节奏和较大的音程进行同前面形成对比；末句落在宫音上完满结束全曲。和激昂的红色颂歌不同，这首作品风格恬淡温润，旋律优美清新。</p >
+  </div>
+
+  <div class="sub-title-box">教学目标</div>
+  <div class="detail-block">
+    <p><strong>知识目标：</strong>认识声乐套曲概念，了解冼星海的音乐创作，体会抗战时期多样化的红色音乐风格。</p >
+    <p><strong>技能目标：</strong>均匀控制气息，咬字圆润清晰，平稳把控速度。</p >
+    <p><strong>情感目标：</strong>理解革命胜利离不开普通劳动者默默的奉献，感受困境之中坚守希望的力量。</p >
+  </div>
+
+  <div class="sub-title-box">演唱处理</div>
+  <div class="detail-block">
+    <p>音色干净柔和，速度平稳从容，整体力度偏弱，温暖内敛。咬字贴近口语，自然流畅，传递春日耕耘的安宁与期盼。</p >
+  </div>
+
+  <div class="sub-title-box">教学拓展</div>
+  <div class="detail-block">
+    <p>了解《生产大合唱》整体内容，对比冼星海不同作品风格差异。</p >
+  </div>
+
+  <div class="sub-title-box">教学图片</div>
+  <div class="detail-block">
+    <img src="eryueli1.png" alt="冼星海肖像">
+    <img src="eryueli2.png" alt="延安宝塔山">
+    <img src="eryueli3.png" alt="合唱演出">
+      <img src="eryueli4.png" alt="二月里来曲谱">
+  </div>
+
+  <div class="audio-btn-wrap">
+    <a href="eryuelai.mp4" target="_blank" class="audio-btn">▶ 播放音频</a >
+  </div>
+
+  <a class="back-btn" href="index.html">返回首页</a >
+</section>
+
+<footer>
+  <p>陕西师范大学音乐学院 | 延安十三年红色音乐赋能高校思政美育调研项目</p >
+  <p>延安十三年红色音乐高校美育平台 · <span>红色音乐赋能高校思政美育</span></p >
+</footer>
+<!-- ===== 延小音悬浮 AI ===== -->
+<a href="https://yuanqi.tencent.com/webim/#/chat/mrkcel?appid=2098349671251635264&experience=true" target="_blank" class="ai-avatar-btn">
+  <img src="ai.jpg" alt="延小音">
+  <div class="ai-avatar-tip">延小音 · 点我对话</div>
+</a >
+</body>
+</html>
